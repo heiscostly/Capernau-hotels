@@ -214,7 +214,7 @@
             <!--Filters Section-->
             <div class="filters-section">
                 <div class="form-box default-form filter-form wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <form method="post" action="http://t.commonsupport.com/hotera/room-single.html">
+                    <form>
                         <div class="row clearfix">
                             <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
                                 <div class="field-label">Arrival</div>
@@ -264,7 +264,7 @@
                             <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
                                 <div class="field-label e-label">&nbsp;</div>
                                 <div class="field-inner">
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">Check Availability</span></button>
+                                    <button id="clicky" class="theme-btn btn-style-one"><span class="btn-title">Check Availability</span></button>
                                 </div>
                             </div>
                         </div>
@@ -1028,6 +1028,32 @@ Your WIFI devices, like your laptop and smartphones with wireless internet acces
 <script src="js/appear.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom-script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+  const alert = document.getElementById('clicky')
+  alert.addEventListener("click", sweetalert)
+
+
+        function sweetalert () {
+
+          swal({
+              title: "Good job!",
+              text: "Your Request have been Recieved!",
+              icon: "success",
+              button: "Aww yiss!",
+
+              });
+        }
+
+
+</script>
 
 </body>
 
